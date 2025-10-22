@@ -14,10 +14,10 @@
                 <th>Location</th>
             </tr>
             <?php if(!empty($assets)) {
-                foreach($assets as $asset) {
+                foreach($assets as $key=> $asset) {
             ?>
             <tr>
-                <td><?php echo $asset->asset_id;   ?></td>
+                <td><?php echo $key;   ?></td>
                 <td><?php echo $asset->asset_id;   ?></td>
                 <td><?php echo $asset->asset_no;   ?></td>
                 <td><?php echo $asset->asset_name; ?></td>
