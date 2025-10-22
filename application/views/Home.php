@@ -14,7 +14,7 @@
                 <th>Location</th>
             </tr>
             <?php if(!empty($assets)) {
-                foreach($assets as $key=> $asset) {
+                foreach($assets as $key => $asset) {
             ?>
             <tr>
                 <td><?php echo $key;   ?></td>
