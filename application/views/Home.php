@@ -13,6 +13,9 @@
                 <th>Assigned to</th>
                 <th>Location</th>
             </tr>
+            <tr>
+                <td colspan="6"><?php echo $sum; ?></td>
+            </tr>
         </table>
     </div>
 <?php
