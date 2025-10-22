@@ -4,6 +4,8 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+    <br>
+    <br>
 	<title>Welcome to CodeIgniter</title>
 </head>
 <body>
