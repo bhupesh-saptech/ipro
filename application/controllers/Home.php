@@ -1,7 +1,7 @@
 <?php
 class Home extends CI_Controller {
     public function index() {
-        echo "Welcome to AgiLabPlus Inventech";
+        echo "<h1 align='Center'>Welcome to AgiLabPlus Inventech<h1>";
     }
 
 }
