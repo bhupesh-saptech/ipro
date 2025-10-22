@@ -9,13 +9,23 @@
                 <th>#</th>
                 <th>asset ID</th>
                 <th>asset No</th>
-                <th>asset Desc</th>
+                <th>asset Name</th>
                 <th>Assigned to</th>
                 <th>Location</th>
             </tr>
+            <?php if(!empty($assets)) {
+                foreach($assets as $asset) {
+            ?>
             <tr>
-                <td colspan="6"><?php echo $sum; ?></td>
+                <td><?php echo $asset-asset_id  ?></td>
+                <td><?php echo $asset-asset_id  ?></td>
+                <td><?php echo $asset-asset_no  ?></td>
+                <td><?php echo $asset-asset_name?></td>
+                <td><?php echo $asset-staff_id  ?></td>
+                <td><?php echo $asset-site_id   ?></td>
             </tr>
+            <?php }
+            } ?>
         </table>
     </div>
 <?php
