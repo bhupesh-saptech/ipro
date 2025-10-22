@@ -4,7 +4,7 @@ class Home extends CI_Controller {
         $this->load->model('assets');
         $data['assets'] = $this->assets->read_data();
         echo "<pre>";
-        print_r(data['assets']);
+        print_r($data['assets']);
 
         //  $this->load->view("home",$data);
     }
