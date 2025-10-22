@@ -3,12 +3,14 @@
     require 'incld/header.php';
 ?>
     <h1 class="text-center">Welcome to AgileLabPlus</h1>
-    <table class="table table-bordered">
-        <tr>
-            <th>#</th>
-            <th>asset ID</th>
-        </tr>
-    </table>
+    <div class="container">
+        <table class="table table-bordered">
+            <tr>
+                <th>#</th>
+                <th>asset ID</th>
+            </tr>
+        </table>
+    </div>
 <?php
     require 'incld/jslib.php';
     require 'incld/footer.php';
