@@ -13,19 +13,6 @@
                 <th>Assigned to</th>
                 <th>Location</th>
             </tr>
-            <?php if(!empty($assets)) {
-                foreach($assets as $asset) {
-            ?>
-            <tr>
-                <td><?php echo $asset-asset_id;   ?></td>
-                <td><?php echo $asset-asset_id;   ?></td>
-                <td><?php echo $asset-asset_no;   ?></td>
-                <td><?php echo $asset-asset_name; ?></td>
-                <td><?php echo $asset-staff_id  ; ?></td>
-                <td><?php echo $asset-site_id   ; ?></td>
-            </tr>
-            <?php }
-            } ?>
         </table>
     </div>
 <?php
