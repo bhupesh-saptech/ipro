@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
     <br>
     <br>
-	<title>Welcome to CodeIgniter</title>
+	<title>Welcome to AgiLabPlus</title>
 </head>
 <body>
     <h1 align='center'>Welcome to AgiLabPlus Inventech</h1>
