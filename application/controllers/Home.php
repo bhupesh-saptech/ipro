@@ -6,7 +6,7 @@ class Home extends CI_Controller {
         //  echo "<pre>";
         //  print_r($data['assets']);
 
-       $this->load->view("home");
+       $this->load->view("Home");
     }
 
 }
