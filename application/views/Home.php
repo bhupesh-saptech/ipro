@@ -5,7 +5,7 @@
     <h1 class="text-center">Welcome to AgileLabPlus</h1>
     <div class="container">
         <table class="table table-bordered">
-            <tr class="table-dark text-white">
+            <tr class="table-success text-white">
                 <th>#</th>
                 <th>asset ID</th>
                 <th>asset No</th>
