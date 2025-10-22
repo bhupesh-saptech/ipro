@@ -8,6 +8,10 @@
             <tr>
                 <th>#</th>
                 <th>asset ID</th>
+                <th>asset No</th>
+                <th>asset Desc</th>
+                <th>Assigned to</th>
+                <th>Location</th>
             </tr>
         </table>
     </div>
