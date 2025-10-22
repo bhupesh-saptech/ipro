@@ -1,4 +1,4 @@
 <?php 
-    echo "<h1>Welcome to AgiLabPlus Inventech</h1>";
+    echo "<h1 align='center'>Welcome to AgiLabPlus Inventech</h1>";
 ?>
 
