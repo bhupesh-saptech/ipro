@@ -6,9 +6,9 @@
     <div class="container">
         <form>
             <label class="form-label">Asset No </label>
-            <input class="form-control" name="asset_no">
+            <input class="form-control" name="asset_no" value="<?=$asset->asset_no?>">
              <label class="form-label">Asset Name </label>
-            <input class="form-control" name="asset_name">
+            <input class="form-control" name="asset_name" value="<?=$asset->asset_name?>">
         </form>
     </div>
 <?php
