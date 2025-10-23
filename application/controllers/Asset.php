@@ -3,9 +3,7 @@ class Asset extends CI_Controller {
     public function index() {
         $this->load->model('AssetModel');
         $data['assets'] = $this->AssetModel->get_data();
-        echo "<pre>";
-        print_r($data['assets']);
-    //    $this->load->view("assets/list",$data);
+        $this->load->view("assets/list",$data);
     }
     public function view($id="") {
         $this->load->model('AssetModel');
