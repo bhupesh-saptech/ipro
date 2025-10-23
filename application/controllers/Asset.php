@@ -6,17 +6,17 @@ class Assets extends CI_Controller {
     //    $this->load->view("assets/list",$data);
     }
     public function view($id="") {
-        $this->load->model('assets');
+        $this->load->model('assetmodel');
         $data['asset'] = $this->assets->get_data($id);
          $this->load->view("assets/view",$data);
     }
     public function edit($id="") {
-        $this->load->model('assets');
+        $this->load->model('assetmodel');
         $data['asset'] = $this->assets->get_data($id);
          $this->load->view("assets/view",$data);
     }
     public function delete($id="") {
-        $this->load->model('assets');
+        $this->load->model('assetmodel');
         $data['asset'] = $this->assets->get_data($id);
          $this->load->view("assets/view",$data);
     }

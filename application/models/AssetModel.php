@@ -1,5 +1,5 @@
 <?php
-class Assets extends CI_Model {
+class AssetModel extends CI_Model {
    
     public function get_data($id = '') {
         
