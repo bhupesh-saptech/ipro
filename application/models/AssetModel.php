@@ -8,7 +8,7 @@ class AssetModel extends CI_Model {
         $this->db->join( 'sites  b', 'b.site_id = a.site_id', 'left');
         $this->db->join( 'staff  c', 'c.staff_id = a.staff_id', 'left');
         if($asset_id != '') {
-             $this->db->where('a.asset_id', '$asset_id');
+             $this->db->where('a.asset_id', $asset_id);
              return $this->db->get()->row();
         } else {
             return $this->db->get()->result();
