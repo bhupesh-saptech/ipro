@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /  # Change this if CodeIgniter is in a subfolder
+    RewriteBase /ipro/  # Change this if CodeIgniter is in a subfolder
 
     # Redirect index.php URLs
     RewriteCond %{REQUEST_FILENAME} !-f
