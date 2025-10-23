@@ -2,7 +2,7 @@
 class Asset extends CI_Controller {
     public function index() {
         $this->load->model('AssetModel');
-        $data['assets'] = $this->assetmodel->get_data();
+        $data['assets'] = $this->AssetModel->get_data();
        $this->load->view("assets/list",$data);
     }
     public function view($id="") {
