@@ -13,6 +13,7 @@
                 <th>Assigned to</th>
                 <th>Location</th>
                 <th>Asset Value</th>
+                <th colspan="3">Action</th>
             </tr>
             <?php if(!empty($assets)) {
                 foreach($assets as $key => $asset) {
@@ -25,6 +26,9 @@
                 <td><?php echo $asset->staff_name; ?></td>
                 <td><?php echo $asset->site_name ; ?></td>
                 <td class="text-right"><?php echo $asset->net_value ; ?></td>
+                <td><i class="fas fa-eye"></i></td>
+                <td><i class="fas fa-eye"></i></td>
+                <td><i class="fas fa-eye"></i></td>
             </tr>
             <?php }
             } ?>
