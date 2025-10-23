@@ -10,7 +10,7 @@ class AssetModel extends CI_Model {
         // if($id != '') {
         //     $this->db->where('a.id', '$id');
         // }
-        return $this->db->get()->row();
+        return $this->db->get()->result();
     }
 }
 ?>
