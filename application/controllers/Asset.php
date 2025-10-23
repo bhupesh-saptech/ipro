@@ -5,19 +5,19 @@ class Asset extends CI_Controller {
         $data['assets'] = $this->AssetModel->get_data();
         $this->load->view("asset/list",$data);
     }
-    public function view($id="") {
+    public function view($asset_id="") {
         $this->load->model('AssetModel');
         $data['asset'] = $this->AssetModel->get_data($asset_id);
         echo "<pre>";
         print_r($data['asset']);
         //   $this->load->view("asset/view",$data);
     }
-    public function edit($id="") {
+    public function edit($asset_id="") {
         $this->load->model('AssetModel');
         $data['asset'] = $this->AssetModel->get_data($asset_id);
          $this->load->view("asset/view",$data);
     }
-    public function delete($id="") {
+    public function delete($asset_id="") {
         $this->load->model('AssetModel');
         $data['asset'] = $this->AssetModel->get_data($asset_id);
          $this->load->view("asset/view",$data);
