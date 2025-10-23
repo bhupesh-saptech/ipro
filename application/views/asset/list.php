@@ -26,9 +26,9 @@
                 <td><?php echo $asset->staff_name; ?></td>
                 <td><?php echo $asset->site_name ; ?></td>
                 <td class="text-right"><?php echo $asset->net_value ; ?></td>
-                <td><a href="index.php/assets/view/"<?=$asset->asset_Id?>  class="btn btn-outline-primary"><i class="fas fa-eye">  </i></a></td>
-                <td><a href="index.php/assets/edit/"<?=$asset->asset_Id?>  class="btn btn-outline-primary"><i class="fas fa-edit"> </i></a></td>
-                <td><a href="index.php/assets/delete/"<?=$asset->asset_Id?> class="btn btn-outline-primary"><i class="fas fa-trash"></i></a></td>
+                <td><a href="index.php/assets/view/"<?=$asset->asset_id?>  class="btn btn-outline-primary"><i class="fas fa-eye">  </i></a></td>
+                <td><a href="index.php/assets/edit/"<?=$asset->asset_id?>  class="btn btn-outline-primary"><i class="fas fa-edit"> </i></a></td>
+                <td><a href="index.php/assets/delete/"<?=$asset->asset_id?> class="btn btn-outline-primary"><i class="fas fa-trash"></i></a></td>
             </tr>
             <?php }
             } ?>
