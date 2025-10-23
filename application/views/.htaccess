@@ -1,16 +1,15 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-
-    # Set the base path of your subdirectory
     RewriteBase /ipro/
 
-    # Redirect index.php requests to root
-    RewriteCond %{THE_REQUEST} ^.*/index\.php [NC]
-    RewriteRule ^(.*)index\.php/?(.*)$ /ipro/$1$2 [R=301,NC,L]
+    # Redirect requests that include index.php
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*index\.php [NC]
+    RewriteRule ^index\.php/?(.*)$ $1 [R=301,NC,L]
 
-    # If the requested resource doesn't exist, send to index.php
+    # Send non-existing files/folders to index.php
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)$ index.php/$1 [L]
 </IfModule>
+
 
