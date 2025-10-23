@@ -24,7 +24,7 @@
                 <td><?php echo $asset->asset_name; ?></td>
                 <td><?php echo $asset->staff_name; ?></td>
                 <td><?php echo $asset->site_name ; ?></td>
-                <td><?php echo $asset->net_value ; ?></td>
+                <td class="text-right"><?php echo $asset->net_value ; ?></td>
             </tr>
             <?php }
             } ?>
