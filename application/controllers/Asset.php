@@ -1,5 +1,5 @@
 <?php
-class Assets extends CI_Controller {
+class Asset extends CI_Controller {
     public function index() {
     //     $this->load->model('assets');
     //     $data['assets'] = $this->assets->get_data();
