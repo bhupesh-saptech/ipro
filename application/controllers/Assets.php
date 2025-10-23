@@ -1,13 +1,24 @@
 <?php
-class Home extends CI_Controller {
+class Assets extends CI_Controller {
     public function index() {
         $this->load->model('assets');
-        $data['assets'] = $this->assets->read_data();
+        $data['assets'] = $this->assets->get_data();
        $this->load->view("assets/list",$data);
     }
-    public function view(id="") {
+    public function view($id="") {
         $this->load->model('assets');
-        $data['assets'] = $this->assets->read_data();
+        $data['asset'] = $this->assets->get_data($id);
+         $this->load->view("assets/view",$data);
+    }
+    public function edit($id="") {
+        $this->load->model('assets');
+        $data['asset'] = $this->assets->get_data($id);
+         $this->load->view("assets/view",$data);
+    }
+    public function delete($id="") {
+        $this->load->model('assets');
+        $data['asset'] = $this->assets->get_data($id);
+         $this->load->view("assets/view",$data);
     }
 
 }
