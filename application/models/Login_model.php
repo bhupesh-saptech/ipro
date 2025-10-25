@@ -15,13 +15,13 @@ class Login_model extends CI_Model
      * @param string $email : This is email of the user
      * @param string $password : This is encrypted password of the user
      */
-    function loginMe($user_id, $pass_wd)
+    function loginMe($mail_id, $pass_wd)
     {
         $this->db->select('a.user_id, a.pass_wd,a.mail_id,a.user_nm, a.role_id, a.isadmin, 
         b.role_id, b.role_nm,b.role_st,b.deleted as role_dx');
         $this->db->from('users as a');
         $this->db->join('roles as b','b.role_id = a.role_id');
-        $this->db->where('a.mail_id', $email);
+        $this->db->where('a.mail_id', $mail_id);
         $this->db->where('a.deleted', 0);
         $query = $this->db->get();
         
