@@ -66,5 +66,5 @@
 
 <?php
     require 'assets/incld/jslib.php';
-    require 'assets/incld/footer.php';
+    // require 'assets/incld/footer.php';
 ?>
