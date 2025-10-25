@@ -51,8 +51,8 @@ class Login extends CI_Controller
     {
         $this->load->library('form_validation');
         
-        $this->form_validation->set_rules('email', 'Email', 'required|valid_email|max_length[128]|trim');
-        $this->form_validation->set_rules('password', 'Password', 'required|max_length[32]');
+        $this->form_validation->set_rules('mail_id', 'Mail ID', 'required|valid_email|max_length[128]|trim');
+        $this->form_validation->set_rules('passwd', 'Password', 'required|max_length[32]');
         
         if($this->form_validation->run() == FALSE)
         {
@@ -60,10 +60,10 @@ class Login extends CI_Controller
         }
         else
         {
-            $email = strtolower($this->security->xss_clean($this->input->post('email')));
-            $password = $this->input->post('password');
+            $mail_id = strtolower($this->security->xss_clean($this->input->post('mail_id')));
+            $pass_wd = $this->input->post('pass_wd');
             
-            $result = $this->login_model->loginMe($email, $password);
+            $result = $this->login_model->loginMe($mail_id, $pass_wd);
 
             //pre($result); die;
             
