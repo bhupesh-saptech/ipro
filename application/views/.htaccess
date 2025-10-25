@@ -1,15 +1,9 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /ipro/
-
-    # Redirect requests that include index.php
-    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*index\.php [NC]
-    RewriteRule ^index\.php/?(.*)$ $1 [R=301,NC,L]
-
-    # Send non-existing files/folders to index.php
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ index.php/$1 [L]
-</IfModule>
+DirectoryIndex index.php
+RewriteEngine on
+ 
+RewriteCond $1 !^(index\.php|(.*)\.swf|forums|images|css|downloads|jquery|js|robots\.txt|favicon\.ico)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ ./index.php?$1 [L,QSA]
 
 
