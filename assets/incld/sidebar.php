@@ -27,14 +27,14 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="assets/dist/img/avatar.png" class="user-image" alt="User Image"/>
+                  <!-- <img src="assets/dist/img/avatar.png" class="user-image" alt="User Image"/> -->
                   <span class="hidden-xs"><?php echo $name; ?></span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
                     
-                    <img src="assets/dist/img/avatar.png" class="img-circle" alt="User Image" />
+                    <!-- <img src="assets/dist/img/avatar.png" class="img-circle" alt="User Image" /> -->
                     <p>
                       <?php echo $name; ?>
                       <small><?php echo $role_text; ?></small>
@@ -102,7 +102,7 @@
               </ul>
             </li>
             <?php
-            if($is_admin == 1)
+            if($isadmin == 1)
             {
             ?>
             <li>
@@ -121,7 +121,7 @@
             }
             ?>
             <?php
-            if($is_admin == 1 ||
+            if($isadmin == 1 ||
                 (array_key_exists('Booking', $access_info) 
                 && ($access_info['Booking']['list'] == 1 || $access_info['Booking']['total_access'] == 1)))
             {
@@ -136,7 +136,7 @@
             }
             ?>
             <?php
-            if($is_admin == 1 ||
+            if($isadmin == 1 ||
                 (array_key_exists('Task', $access_info) 
                 && ($access_info['Task']['list'] == 1 || $access_info['Task']['total_access'] == 1)))
             {
