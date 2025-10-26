@@ -69,7 +69,7 @@ class Login extends CI_Controller
             
             if (!empty($result))
             {
-                if ($result->isAdmin != SYSTEM_ADMIN && ($result->roleStatus == 2 || $result->isRoleDeleted == 1))
+                if ($result->isadmin != SYSTEM_ADMIN && ($result->role_st == 2 || $result->role_dx == 1))
                 {
                     $this->session->set_flashdata('error', 'The user doesn\'t have any role or the role is deactivated');
                     redirect('login');
