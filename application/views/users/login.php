@@ -36,7 +36,7 @@
                 <?php echo $success; ?>                    
             </div>
         <?php } ?>
-        <form action="login/loginMe" method="post">
+        <form  method="post">
           <div class="form-group has-feedback">
             <input type="mail_id" class="form-control" placeholder="mail_id" name="mail_id" required />
             <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
