@@ -13,7 +13,7 @@
                     <div class="card-body">
                         <div class=row">
                             <div class="col-md-12">
-                                <?php include('../incld/messages.php'); ?>
+                                <?php include('assets/incld/messages.php'); ?>
                             </div>
                         </div>
                         <form action="" method="POST">
