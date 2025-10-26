@@ -27,7 +27,7 @@ class User extends BaseController
     public function index()
     {
         $this->global['pageTitle'] = 'CodeInsect : Dashboard';
-        $this->load->view("general/dashboard");
+        $this->load->view("general/dashboard",$this->global);
         
         // $this->loadViews("general/dashboard", $this->global, NULL , NULL);
     }
