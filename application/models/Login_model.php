@@ -147,8 +147,8 @@ class Login_model extends CI_Model
      */
     function getRoleAccessMatrix($role_id)
     {
-        $this->db->select('role_id, access');
-        $this->db->from('role_matrix');
+        $this->db->select('role_id, amatrix');
+        $this->db->from('matrix');
         $this->db->where('role_id', $role_id);
         $query = $this->db->get();
         

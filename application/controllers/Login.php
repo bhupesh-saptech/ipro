@@ -75,15 +75,15 @@ class Login extends CI_Controller
                 //     redirect('login');
                 // }
 
-                $lastLogin = $this->login_model->lastLoginInfo($result->userId);
+                // $lastLogin = $this->login_model->lastLoginInfo($result->userId);
 
-                $accessInfo = $this->accessInfo($result->roleId);
+                $accessInfo = $this->accessInfo($result->role_id);
 
-                $sessionArray = array('userId'=>$result->userId,
-                                        'role'=>$result->roleId,
-                                        'roleText'=>$result->role,
-                                        'name'=>$result->name,
-                                        'isAdmin'=>$result->isAdmin,
+                $sessionArray = array(  'user_id'   =>$result->user_id,
+                                        'role_id'   =>$result->role_id,
+                                        'role_nm'   =>$result->role_nm,
+                                        'user_nm'   =>$result->user_nm,
+                                        'isadmin'   =>$result->isadmin,
                                         'accessInfo'=>$accessInfo,
                                         'lastLogin'=> empty($lastLogin->createdDtm) ? '' : $lastLogin->createdDtm,
                                         'isLoggedIn' => TRUE
@@ -269,15 +269,15 @@ class Login extends CI_Controller
      * @param number $roleId: This is role id
      * @return array $finalMatrixArray: This is converted array
      */
-    private function accessInfo($roleId)
+    private function accessInfo($role_id)
     {
         $finalMatrixArray = [];
-        $matrix = $this->login_model->getRoleAccessMatrix($roleId);
+        $matrix = $this->login_model->getRoleAccessMatrix($role_id);
         
         if(!empty($matrix)) {
-            $accessMatrix = json_decode($matrix->access);
-            foreach($accessMatrix as $moduleMatrix) {
-                $finalMatrixArray[$moduleMatrix->module] = (array) $moduleMatrix;
+            $amatrix = json_decode($matrix->amatrix);
+            foreach($amatrix as $iMatrix) {
+                $finalMatrixArray[$imatrix->module] = (array) $imatrix;
             }
         }
         
