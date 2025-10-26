@@ -2,67 +2,40 @@
     defined('BASEPATH') OR exit('No direct script access allowed'); 
     require 'assets/incld/header.php';
 ?>
-
-  <body class="hold-transition login-page">
-    <div class="login-box">
-      <div class="login-logo">
-        <a href="#"><b>CodeInsect</b><br>Admin System</a>
-      </div><!-- /.login-logo -->
-      <div class="login-box-body">
-        <p class="login-box-msg">Sign In</p>
-        <?php $this->load->helper('form'); ?>
-        <div class="row">
-            <div class="col-md-12">
-                <?php echo validation_errors('<div class="alert alert-danger alert-dismissable">', ' <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button></div>'); ?>
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5 my-5">
+                <div class="card my-5">
+                    <div class="card-header bg-light">
+                        <h5>Login Form</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class=row">
+                            <div class="col-md-12">
+                                <?php include('../incld/messages.php'); ?>
+                            </div>
+                        </div>
+                        <form action="" method="POST">
+                            <div class="form-group">
+                                <label for="">User ID</label>
+                                <input type="text" name="user_id" class="form-control" placeholder="User ID">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Password</label>
+                                <input type="password" name="pass_wd" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" name="submit" class="btn btn-primary btn-block" >Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-        <?php
-        $this->load->helper('form');
-        $error = $this->session->flashdata('error');
-        if($error)
-        {
-            ?>
-            <div class="alert alert-danger alert-dismissable">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <?php echo $error; ?>                    
-            </div>
-        <?php }
-        $success = $this->session->flashdata('success');
-        if($success)
-        {
-            ?>
-            <div class="alert alert-success alert-dismissable">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                <?php echo $success; ?>                    
-            </div>
-        <?php } ?>
-        <form  method="post">
-          <div class="form-group has-feedback">
-            <input type="mail_id" class="form-control" placeholder="mail_id" name="mail_id" required />
-            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-          </div>
-          <div class="form-group has-feedback">
-            <input type="password" class="form-control" placeholder="Password" name="pass_wd" required />
-            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-          </div>
-          <div class="row">
-            <div class="col-xs-8">    
-              <!-- <div class="checkbox icheck">
-                <label>
-                  <input type="checkbox"> Remember Me
-                </label>
-              </div>  -->                       
-            </div><!-- /.col -->
-            <div class="col-xs-4">
-              <input type="submit" class="btn btn-primary btn-block btn-flat" value="Sign In" />
-            </div><!-- /.col -->
-          </div>
-        </form>
-
-        <a href="<?php echo base_url() ?>forgotPassword">Forgot Password</a><br>
-        
-      </div><!-- /.login-box-body -->
-    </div><!-- /.login-box -->
+    </div>
+</div>
+<div>
 
 <?php
     require 'assets/incld/jslib.php';
