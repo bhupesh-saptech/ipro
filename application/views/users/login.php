@@ -11,15 +11,15 @@
                         <h5>Login Form</h5>
                     </div>
                     <div class="card-body">
-                        <div class=row">
+                        <div class="row">
                             <div class="col-md-12">
                                 <?php include('assets/incld/messages.php'); ?>
                             </div>
                         </div>
-                        <form action="" method="POST">
+                        <form action="Login/LoginMe" method="POST">
                             <div class="form-group">
-                                <label for="">User ID</label>
-                                <input type="text" name="user_id" class="form-control" placeholder="User ID">
+                                <label for="">Email ID</label>
+                                <input type="text" name="mail_id" class="form-control" placeholder="Email ID">
                             </div>
                             <div class="form-group">
                                 <label for="">Password</label>
