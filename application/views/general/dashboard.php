@@ -1,3 +1,7 @@
+<?php 
+    defined('BASEPATH') OR exit('No direct script access allowed'); 
+    require 'assets/incld/header.php';
+?>
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -71,3 +75,7 @@
       </div>
     </section>
 </div>
+<?php
+    require 'assets/incld/jslib.php';
+    require 'assets/incld/footer.php';
+?>
