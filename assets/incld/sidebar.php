@@ -102,8 +102,8 @@
               </ul>
             </li>
             <?php
-            if($isadmin == 1)
-            {
+            // if($isadmin == 1)
+            // {
             ?>
             <li>
               <a href="userListing">
@@ -118,13 +118,13 @@
               </a>
             </li>
             <?php
-            }
+            // }
             ?>
             <?php
-            if($isadmin == 1 ||
-                (array_key_exists('Booking', $access_info) 
-                && ($access_info['Booking']['list'] == 1 || $access_info['Booking']['total_access'] == 1)))
-            {
+            // if($isadmin == 1 ||
+            //     (array_key_exists('Booking', $access_info) 
+            //     && ($access_info['Booking']['list'] == 1 || $access_info['Booking']['total_access'] == 1)))
+            // {
               ?>
             <li>
               <a href="booking">
@@ -133,13 +133,13 @@
               </a>
             </li>
               <?php
-            }
+            // }
             ?>
             <?php
-            if($isadmin == 1 ||
-                (array_key_exists('Task', $access_info) 
-                && ($access_info['Task']['list'] == 1 || $access_info['Task']['total_access'] == 1)))
-            {
+            // if($isadmin == 1 ||
+            //     (array_key_exists('Task', $access_info) 
+            //     && ($access_info['Task']['list'] == 1 || $access_info['Task']['total_access'] == 1)))
+            // {
               ?>
             <li>
               <a href="task">
@@ -148,7 +148,7 @@
               </a>
             </li>
             <?php
-            }
+            // }
             ?>
           </ul>
         </section>
