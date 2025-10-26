@@ -126,12 +126,6 @@
             //     && ($access_info['Booking']['list'] == 1 || $access_info['Booking']['total_access'] == 1)))
             // {
               ?>
-            <li>
-              <a href="booking">
-                <i class="fa fa-anchor"></i>
-                <span>Booking</span>
-              </a>
-            </li>
               <?php
             // }
             ?>
@@ -141,12 +135,7 @@
             //     && ($access_info['Task']['list'] == 1 || $access_info['Task']['total_access'] == 1)))
             // {
               ?>
-            <li>
-              <a href="task">
-                <i class="fa fa-tasks"></i>
-                <span>Tasks</span>
-              </a>
-            </li>
+            
             <?php
             // }
             ?>
