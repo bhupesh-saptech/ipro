@@ -1,6 +1,4 @@
-<?php   include('../incld/verify.php');
-        include('../admin/check_auth.php');
-?>
+
 <li class="nav-item">
     <a href="../admin/index.php" class="nav-link">
       <i class="nav-icon far fa-image"></i>
