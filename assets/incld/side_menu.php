@@ -4,7 +4,7 @@
     <div align="center" style="color:white";>Baramati Cattlefeeds Pvt. Ltd.</div>
     <div>
     <a href="../index.php" class="brand-link">
-      <!-- <img src="../assets/dist/img/hf_logo.png" alt="BCPL Logo" style="width:230px;height:60px;opacity: .8;"> -->
+      <img src="../assets/dist/img/ess.jpg" alt="BCPL Logo" style="width:230px;height:60px;opacity: .8;"> -->
     </a>
     </div>
     
