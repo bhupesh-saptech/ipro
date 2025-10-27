@@ -1,7 +1,7 @@
 <?php 
     defined('BASEPATH') OR exit('No direct script access allowed'); 
     require 'assets/incld/header.php';
-    require 'assets/incld/sidebar.php';
+    require 'assets/incld/side_menu.php';
 ?>
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
